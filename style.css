@@ -1,0 +1,74 @@
+/* CSS files add styling rules to your content */
+body{
+  width: 100%;
+  height: 100%;
+  margin:0px;
+  color: white;
+  font-size: 28px;
+  background-color: black;
+}
+.container{
+   padding-right:5px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: space-between;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  border-radius: 2%;
+}
+.header, .footer{
+  background-color: #FFA07A;
+}
+.middle{
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  height: 800px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow:1;
+  border-radius: 2%;
+  }
+.menu{
+  background-color: #c0c0c0;
+  flex-basis: 20%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 2%;
+  }
+.center{
+  background-color: white;
+  color: black;
+  flex-basis: 60%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 2%;
+}
+.ad{
+  background-color: #87CEEB;
+  flex-basis: 20%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 2%;
+}
+.header{
+  display:flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 640px){
+  .middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     }
+  .center{
+    order: -1;
+  }
+}
